@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iam_rich" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'am Rich" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xkw-zi-b5j">
+                                <rect key="frame" x="20" y="152" width="374" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="0SD-lK-bq9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6I0-aA-FUl">
+                                <rect key="frame" x="0.0" y="553.5" width="414" height="82"/>
+                                <color key="backgroundColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6I0-aA-FUl" secondAttribute="height" multiplier="187:41" constant="40.000000000000057" id="nRN-rA-59u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Clic here ">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Bclic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LvX-G2-sJu"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diamond" translatesAutoresizingMaskIntoConstraints="NO" id="291-rh-P9L">
+                                <rect key="frame" x="20" y="296" width="374.00000000000006" height="160.5"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="291-rh-P9L" secondAttribute="trailing" constant="20" id="1Xn-jR-16C"/>
+                            <constraint firstItem="6I0-aA-FUl" firstAttribute="top" secondItem="291-rh-P9L" secondAttribute="bottom" constant="97" id="Cvj-3X-cID"/>
+                            <constraint firstItem="Xkw-zi-b5j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="H8R-8t-geC"/>
+                            <constraint firstItem="6I0-aA-FUl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="I2t-zJ-90J"/>
+                            <constraint firstItem="Xkw-zi-b5j" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="108" id="IGo-Ea-cYh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xkw-zi-b5j" secondAttribute="trailing" constant="20" id="KbI-aB-MBn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6I0-aA-FUl" secondAttribute="trailing" id="WuO-Ld-Fd8"/>
+                            <constraint firstItem="291-rh-P9L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="bHg-Q8-d57"/>
+                            <constraint firstItem="6I0-aA-FUl" firstAttribute="top" secondItem="291-rh-P9L" secondAttribute="bottom" constant="97" id="bXy-bF-MdC"/>
+                            <constraint firstItem="Xkw-zi-b5j" firstAttribute="trailing" secondItem="6I0-aA-FUl" secondAttribute="trailing" constant="-20" id="l9g-Jj-f8o"/>
+                            <constraint firstItem="291-rh-P9L" firstAttribute="top" secondItem="Xkw-zi-b5j" secondAttribute="bottom" constant="98" id="mVl-YR-50A"/>
+                            <constraint firstItem="Xkw-zi-b5j" firstAttribute="leading" secondItem="6I0-aA-FUl" secondAttribute="leading" constant="20" id="vdf-03-CPY"/>
+                            <constraint firstItem="291-rh-P9L" firstAttribute="top" secondItem="Xkw-zi-b5j" secondAttribute="bottom" constant="98" id="xSo-rR-qek"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imagecontrol" destination="291-rh-P9L" id="5Zu-iI-le1"/>
+                        <outlet property="labelRich" destination="Xkw-zi-b5j" id="frY-y3-pgi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="diamond" width="214" height="160.5"/>
+    </resources>
+</document>
